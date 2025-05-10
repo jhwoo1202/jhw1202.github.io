@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>차린건 쥐뿔도 없지만 현우의 홈페이지에 오신것을 환영합니다.</title>
+  <title>현우의 차린건 쥐뿔도 없지만</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
-    <h1>차린건 쥐뿔도 없지만 현우의 홈페이지에 오신것을 환영합니다.</h1>
+    <h1>현우의 차린건 쥐뿔도 없지만</h1>
     <p>컴퓨터공학과 정현우의 모든 기록을 담은 포트폴리오</p>
   </header>
+
   <nav>
     <ul>
       <li><a href="#notice">📚 수강 과목</a></li>
@@ -19,6 +20,7 @@
       <li><a href="#graduation">🎓 졸업 이수</a></li>
     </ul>
   </nav>
+
   <main>
     <section id="notice">
       <h2>📚 수강 과목</h2>
@@ -35,12 +37,18 @@
     <section id="gallery">
       <h2>🖼️ 나의 갤러리</h2>
       <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
-        <img src="images/gallery1.jpg" width="300">
-        <img src="images/gallery2.jpg" width="300">
-        <img src="images/gallery3.jpg" width="300">
+        <!-- 이미지 52장 자동 출력 -->
+        <!-- gallery1.jpg ~ gallery52.jpg -->
+        <!-- 아래는 예시 3장, 실제로는 52개 복사 -->
+        <!-- 아래 부분은 반복문 돌려도 되지만, 정적 사이트니까 수동으로 반복 -->
+        <img src="images/gallery1.jpg" width="250" alt="gallery1" />
+        <img src="images/gallery2.jpg" width="250" alt="gallery2" />
+        <img src="images/gallery3.jpg" width="250" alt="gallery3" />
+        <!-- ... -->
+        <img src="images/gallery52.jpg" width="250" alt="gallery52" />
       </div>
-      <audio controls autoplay loop muted>
-        <source src="music/background.mp3" type="audio/mp3">
+      <audio controls autoplay loop>
+        <source src="music/background.mp3" type="audio/mp3" />
         브라우저가 오디오를 지원하지 않습니다.
       </audio>
     </section>
